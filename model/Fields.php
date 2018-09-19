@@ -31,7 +31,7 @@ class Field {
     }
 }
 
-class Fields {
+class Fields{
     private $fields = array();
 
     public function addField($name, $message = '') {
