@@ -21,7 +21,6 @@ $fields->addField('lastname');
 $fields->addField('email', 'Must be a valid email address.');
 
 
-
     $action = filter_input(INPUT_POST, 'action');
      if ($action == 'add_comment') {
         $firstname = trim(filter_input(INPUT_POST, 'firstname'));
@@ -114,7 +113,7 @@ $fields->addField('email', 'Must be a valid email address.');
                            autocomplete="email" />
                     
                     <!--This span is used for input validation messages-->
-                    <span id="contact_form_error" class="error_text contact_error"></span>
+                    <span id="contact_form_error" class="error_text contact_error"  ></span>
 
                 </fieldset>
                 <fieldset>
