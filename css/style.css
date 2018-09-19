@@ -1,0 +1,456 @@
+/* Style sheet created by: Joseph Marsh, 3/10/2018 */
+
+/* Style for body specifies a background color */
+body 
+{
+	background-color: #E0F0FF;
+}
+
+#tabDiscription #tabTitle {
+    margin-left: .5em;
+}
+
+table{
+    text-align:center;
+}
+
+tr{
+    text-align: left;
+}
+input:placeholder-shown{
+    border: solid 2px red;
+}
+
+form{
+    display:inline;
+}
+/*	Style for Qeustion and answer for FAQ page*/
+p.question{
+    color:#000000;
+}
+
+p.answer{
+    color: darkblue;
+}
+
+button {
+    margin-left: 3em;
+    margin-top: 1em;
+}
+/*	Class and style to use for all error texts*/
+.error_text {
+    color: red;
+}
+#contact_error{
+}
+
+#buildPointProgress {
+    width: 100%;
+    background-color: #ddd;
+    border: none;
+    background: #000000;
+    border-radius: 1em;
+    border: 2px inset rgba(65, 61, 61, 0.27);
+}
+
+#buildPointBar {
+    width: 100%;
+    /*background-color: rgba(0, 102, 11, 0.50);*/
+    text-align: center;
+    border: 0;
+    background: #00008b;
+    color: rgba(0, 255, 33, 0.49);
+    border-radius: 1em;
+    border: 2px inset rgba(0, 255, 33, 0.49);
+}
+#powerPointProgress {
+    width: 100%;
+    background-color: #ddd;
+    border: none;
+    background: #000000;
+    border-radius: 1em;
+    border: 2px inset rgba(65, 61, 61, 0.27);
+}
+
+#powerPointBar {
+    width: 100%;
+    /*background-color: rgba(0, 102, 11, 0.50);*/
+    text-align: center;
+    border: 0;
+    background: #00008b;
+    color: rgba(0, 255, 33, 0.49);
+    border-radius: 1em;
+    border: 2px inset cornflowerblue;
+}
+
+
+footer {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    float: left;
+    width: 11em;
+    margin-bottom:auto;
+}
+
+input, select {
+    margin-bottom: .5em;
+    vertical-align: middle;
+}
+
+.ui-button {
+    background: #102d75;
+    padding: .4em 1em;
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+    margin-right: .1em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* Support: IE <= 11 */
+    overflow: visible;
+    border-radius: 1em;
+    color: cornflowerblue;
+}
+
+h4{
+    font-size:.5em;
+    color:darkgrey;
+}
+
+/*	Style specifies dynamic image size*/
+img
+{
+	max-width: 100%;
+}
+
+/*	Style for the container centers 
+	the page and specifies the width */
+#container 
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header specifies top margin, 
+	background color, rounded corners, 
+	and center align content */
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+    text-align: center;
+    padding: 0.2em;
+    color: rgba(0, 102, 11, 0.50);
+}
+
+#banner 
+{
+	text-align: center;
+    
+}
+
+/* Style for nav specifies text properties */
+nav 
+{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+    margin-bottom: auto;
+}
+
+/*Style specifies padding and margins for unordered lists*/
+nav ul
+{
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/*	Style for nav li specifies the background color, 
+	rounded corners removes bullets and applies 
+	margins and padding for list itmes in nav*/
+nav li
+{
+	background-color: rgba(0, 0, 102, 0.37);
+	list-style-type: none;
+	margin: 0.4em;
+	padding: 0.5em;
+}
+
+/*	Style changes navigation link text 
+	color to white and removes underline*/
+nav li a 
+{
+	color: rgba(0, 0, 102, 1);
+	text-decoration: none;
+}
+
+/* Style for the main specifies a block display, 
+	text properties, margins, padding, rounded corners, and borders  */
+main 
+{
+	display: block;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	font-size: 1.2em;
+	margin-top: 1.5em;
+	padding: 0.5em;
+    margin-bottom:1em;
+}
+
+/* Style for the footer specifies font size, text alignment, and top margin */
+footer 
+{
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+footer table caption{
+    font-size: 1.5em;
+}
+
+.mobile
+{
+	display: inline;
+}
+
+input, textarea, select {
+    display: block;
+    margin-bottom: .5em;
+    margin-right: auto;
+}
+input[type='checkbox'] {
+    height: auto;
+    width: auto;
+
+}
+
+    input.tool2Number {
+        width: 5em;
+    }
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+
+.fillControler{
+    min-height: 500px;
+    max-height: 700px;
+}
+
+table.employeeTable {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+td.employeeTable, th.employeeTable {
+    border: 1px solid black;
+    padding: .2em .5em .2em .5em;
+    text-align: left;
+}
+
+
+/*	media query for tablet viewport targets 
+	screen size with a minimum width of 599px. */
+@media only screen and (min-width: 685px)
+{
+    .fillControler {
+        min-height: 500px;
+        max-height: 800px;
+    }
+
+    .ui-tabs .ui-tabs-panel {
+        background-color: cornflowerblue;
+        border-radius: .5em;
+    }
+
+    label {
+        float: left;
+        padding-right: 0.5em;
+        text-align: right;
+        width: 8em;
+        
+    }
+	img
+	{
+		width: 80%
+	}
+
+    #banner {
+        border-radius: 2em;
+    }
+
+    footer table caption {
+        font-size: 1.8em;
+    }
+
+	nav li
+	{
+        
+		display: inline;
+		float: left;
+		margin-left: 1%;
+		margin-right:1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 18%;/*adjust this if more Link Items are reqired*/
+	}
+
+    main {
+        clear: left;
+        border-radius: 2em;
+        padding-bottom: 3em;
+    }
+
+	.mobile
+	{
+		display: none;
+	}
+
+	.desktop
+	{
+		display:inline;
+	}
+
+    fieldset {
+        border: solid 2px black;
+        padding: .5em;
+    }
+
+    input.tool2{
+        width: 10em;
+    }
+
+}
+
+/*	Media query for desktop viewport targets 
+	screens with a minimum of 934px */
+@media only screen and (min-width: 934px)
+{
+    /*Special settings for the Ship builder tools*/
+    table.tool2, th.tool2, td.tool2 {
+        border: 1px solid black;
+        width: auto;
+        font-size: medium;
+        border-collapse: separate;
+    }
+
+    .ui-tabs .ui-tabs-panel {
+        background-color: rgba(0, 38, 255, 0.27);
+        border-radius: .5em;
+    }
+
+    table.tool2 {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.27);
+    }
+
+    td.tool2, th.tool2 {
+        background-color: rgba(255, 255, 255, 0.27);
+    }
+
+    th input {
+        margin: auto;
+        margin-top: .4em;
+    }
+    input.tool2TableInput {
+        width: 95%;
+        height: 95%;
+    }
+
+    fieldset.tool2{
+        margin-bottom: 2em;
+    }
+
+	#container
+	{
+		width: 80%;
+	}
+
+    footer table caption {
+        font-size: 2em;
+        font-weight:bold;
+    }
+
+	img
+	{
+		width: 60%;
+	}
+
+
+	nav ul 
+	{
+		margin: 0;
+		padding-left: 0.50%;
+		padding-right: 0.50%;
+	}
+
+    nav li {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 20%;/*adjust this if more Link Items are reqired*/
+        white-space: nowrap;
+    }
+
+	nav li a 
+	{
+		display: inline-block;
+		padding: 0.7em;
+		font-size: 1.25em;
+	}
+
+	main
+	{
+        background-color:rgba(255, 255, 255, 0.27);
+		border: none;
+		border-radius: 1em;
+		box-shadow: 1em 1em 1em #331400;
+		margin-top: 5em;
+        padding-bottom: 1em;
+	}
+
+	nav li a:link
+	{
+		color: #808080;
+	}
+
+    nav li a:hover {
+        color: #a8a8ff;
+        border-left: 2px dotted black;
+        border-right: 2px dotted black;
+    }
+
+
+	/*	style specifies a gradient for the body element	*/
+	body
+	{
+		background: -moz-linear-gradient(#FFFFFF, #3366CC); /*	firefox	*/
+		background: -o-linear-gradient(#FFFFFF, #3366CC); /*	Opera	*/
+		background: -webkit-linear-gradient(#FFFFFF, #3366CC); /*	chrome, safari	*/
+		background: linear-gradient(#FFFFFF, #3366CC); 
+		background-attachment: fixed;
+	}
+    .fillControler {
+        min-height: 500px;
+        max-height: 1200px;
+    }
+}
