@@ -6,7 +6,7 @@
  ********************************************************************/
 
     function add_customer($firstname, $lastname, $email, $newsLetter) {
-        global $db;
+        $db = Database::getDB();
         //populates the current date
         $date = date("Y-m-d");
         //if the box is unchecked makes newsletter = false
@@ -26,7 +26,7 @@
     }
     //added this function 9/5/18
     function add_comment($comment, $userID){
-        global $db;
+        $db = Database::getDB();
         //populates the current date
         $date = date("Y-m-d");
         $query = 'INSERT INTO comments
@@ -43,7 +43,7 @@
     
     //added this function 9/5/18
     function userExists($email){
-        global $db;
+        $db = Database::getDB();
         $query = 'SELECT customerID FROM `customers` '
                 . 'WHERE emailAddress = :emailAdress; limit 1 ';
         $statement = $db->prepare($query);
@@ -54,7 +54,5 @@
         $statement->closeCursor();
         return $userID; 
     }
-    
-    
 
 ?>

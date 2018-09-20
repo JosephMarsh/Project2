@@ -44,14 +44,14 @@ $employees = EmployeeDBClass::getEmployees();
                 <li><a href="index.php">Home</a></li>
                 <li><a href="tools.html">Tools</a></li>
                 <li><a href="gallery.html">Project Gallery</a></li>
-                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.php">Contact Me</a></li>
             </ul>
-
         </nav>
         <main>
             <h1>Employees</h1>
             <p>
+                Please note you are not logged in as an admin.  Some functionality will not be available.
             </p>
             <table class="tool2">
                 <tr class="tool2"><!--Row 1-->

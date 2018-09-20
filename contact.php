@@ -37,7 +37,7 @@ $fields->addField('email', 'Must be a valid email address.');
             $email = '';
 
             // Load view
-            include 'contact2.php';
+            include ('contact2.php');
             break;
         case 'add_comment':
             // Copy form values to local variables
@@ -54,7 +54,7 @@ $fields->addField('email', 'Must be a valid email address.');
 
             // Load appropriate view based on hasErrors
             if ($fields->hasErrors()) {
-                include 'contact2.php';
+                include ('contact2.php');
             } else {
                 //Get user ID from Email address
                 $userID = userExists($email);
@@ -128,4 +128,6 @@ $fields->addField('email', 'Must be a valid email address.');
 //     }
 
 ?>
+
+
 

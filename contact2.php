@@ -12,7 +12,7 @@ and open the template in the editor.
     <meta charset="utf-8" />
     <title>Contact Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css\style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
     <!-- java validation commented out to prevent conflicts with PHP Validation 
@@ -30,16 +30,15 @@ and open the template in the editor.
                 <li><a href="index.php">Home</a></li>
                 <li><a href="tools.html">Tools</a></li>
                 <li><a href="gallery.html">Project Gallery</a></li>
-                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.php">Contact Me</a></li>
             </ul>
-
         </nav>
         <main>
             <h1>Contact Me</h1>
             <p>
-                Use the form below to send me an email and sign up for my news letters! Select subject:
-                "Just want the newsletter" if you don't wan't a response to your email.
+                Use the form below to send me a message. You can tell me about tools you'd like me to add, 
+                complain or let me know that I'm doing a good job. By defaukl
             </p>
             <form name="contact" id="contact_form" method="post" id="contact_form" >
                 
@@ -58,7 +57,7 @@ and open the template in the editor.
 
                     <label for="lastname">Last Name</label>
                     <input type="text" name="lastname" id="lastname" placeholder="Last"
-                           value="<?php echo htmlspecialchars($firstname);?>" />
+                           value="<?php echo htmlspecialchars($lastname);?>" />
                     <!--                    error message-->
                     <p id="contact_form_error" class="error_text contact_error">
                         <?php    echo $fields->getField('lastname')->getHTML(); ?>

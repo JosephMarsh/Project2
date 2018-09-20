@@ -54,14 +54,14 @@ $visitors = CommentDBClass::getComments();
                 <li><a href="index.php">Home</a></li>
                 <li><a href="tools.html">Tools</a></li>
                 <li><a href="gallery.html">Project Gallery</a></li>
-                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.php">Contact Me</a></li>
             </ul>
-
         </nav>
         <main>
             <h1>Employees</h1>
             <p>
+                <strong>Warning:</strong> You are currently logged in as an administrator.  All Changes are <em>Permanent</em>!
             </p>
             
             
