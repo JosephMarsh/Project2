@@ -24,6 +24,7 @@
         $statement->execute();
         $statement->closeCursor();
     }
+    
     //added this function 9/5/18
     function add_comment($comment, $userID){
         $db = Database::getDB();
