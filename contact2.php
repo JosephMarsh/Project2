@@ -38,7 +38,7 @@ and open the template in the editor.
             <h1>Contact Me</h1>
             <p>
                 Use the form below to send me a message. You can tell me about tools you'd like me to add, 
-                complain or let me know that I'm doing a good job. By defaukl
+                complain or let me know that I'm doing a good job. 
             </p>
             <form name="contact" id="contact_form" method="post" id="contact_form" >
                 
@@ -74,6 +74,7 @@ and open the template in the editor.
                 </fieldset>
                 <fieldset>
                     <legend>Optional</legend>
+                    <!-- No Validation by design -->
                     <label for="comment">Comments:</label>
                     <textarea name="comment" id="comments" rows="3" cols="25"></textarea>
 

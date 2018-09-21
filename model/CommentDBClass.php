@@ -17,7 +17,7 @@ class CommentDBClass {
 
     
     public static function getComments() {
-        $db = DataBaseClass::getDB();
+        $db = Database::getDB();
         $query = 'SELECT * from comments
                     as comments JOIN customers 
                     ON comments.customerID = customers.customerID';
@@ -38,7 +38,7 @@ class CommentDBClass {
     }
     
     public static function deleteComment($comment_id) {
-        $db = DataBaseClass::getDB();
+        $db = Database::getDB();
         $query = 'DELETE FROM comments
                   WHERE commentID = :comment_id';
         $statement = $db->prepare($query);

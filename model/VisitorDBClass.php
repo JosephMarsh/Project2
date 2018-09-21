@@ -17,7 +17,7 @@ class VisitorDBClass {
     
     
     public static function getVisitors() {
-        $db = DataBaseClass::getDB();
+        $db = Database::getDB();
         $query = 'SELECT * FROM customers
                   ORDER BY customerID';
         $statement = $db->prepare($query);

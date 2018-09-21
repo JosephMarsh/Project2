@@ -32,8 +32,9 @@
                 completed that use the power of java script and the versatility of 
                 web design to bring my Ideas to life. 
             </p>
-            
+            <h3>Admins:</h3>
             <p>Click <a href="listEmployees.php">here</a> for a list of employees.</p>
+            
         </main>
         <footer>
             <div id="social">

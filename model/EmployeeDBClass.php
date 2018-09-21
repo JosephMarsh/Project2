@@ -17,7 +17,7 @@ class EmployeeDBClass {
     
     
     public static function getEmployees() {
-        $db = DataBaseClass::getDB();
+        $db = Database::getDB();
         $query = 'SELECT * FROM admins
                   ORDER BY adminID';
         $statement = $db->prepare($query);

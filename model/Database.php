@@ -24,26 +24,12 @@ class Database {
                                      self::$password);
             } catch (PDOException $e) {
                 $error_message = $e->getMessage();
-                include('../errors/database_error.php');
+                include('./errors/database_error.php');
                 exit();
             }
         }
         return self::$db;
     }
 } 
-
-//Old Function way of access was replaced with a OOP method
-//
-//    $dsn = 'mysql:host=localhost;dbname=project1';
-//        $username = 'root';
-//        $password = 'pa55word';
-//
-//        try {
-//            $db = new PDO($dsn, $username, $password);
-//        } catch (PDOException $e) {
-//            $error_message = $e->getMessage();
-//            include('errors/database_error.php');
-//            exit();
-//        }
 
 ?>

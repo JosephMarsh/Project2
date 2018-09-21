@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-include 'model/DatabaseClass.php';
+include 'model/Database.php';
 include 'model/EmployeeClass.php';
 include 'model/EmployeeDBClass.php';
 

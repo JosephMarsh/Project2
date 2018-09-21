@@ -1,12 +1,12 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/********************************************************* 
+ * By Joseph Marsh
+ * This page is designed to show a list of comments
+ * pulled from the database
+ ********************************************************/
 
-include 'model/DatabaseClass.php';
+include 'model/Database.php';
 include 'model/CommentClass.php';
 include 'model/CommentDBClass.php';
 
@@ -17,7 +17,7 @@ if($action == 'delete_comment'){
     CommentDBClass::deleteComment($comment_id);
 }
 
-//Create an array of employee objects
+//Create an array of comment objects
 $visitors = CommentDBClass::getComments();
 
 //for test purposes
@@ -75,14 +75,14 @@ $visitors = CommentDBClass::getComments();
 
                 <!-- display links for all categories -->
                 <?php foreach($visitors as $comment) : ?>
-                <tr  ><!--rows 2 through x rows where x = total employees +1-->
+                <tr  ><!--rows 2 through x rows where x = total comments +1-->
                     <td class="tool2"><?php echo $comment->getFirstName(); ?></td>
                     <td class="tool2"><?php echo $comment->getComment(); ?></td>
                     <td class="tool2"><?php echo $comment->getEmail(); ?></td>
                     <td class="tool2">
                         <form action="listVisitors.php" method="post"><!-- reload same page with "."-->
                             <input type="hidden" name="action"
-                                   value="delete_comment"><!--requires escalataion-->
+                                   value="delete_comment"><!--requires escalation-->
                             <input type="hidden" name="comment_ID"
                                    value="<?php echo $comment->getCommentID(); ?>">
                                 <input type="submit" value="Delete">

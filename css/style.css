@@ -413,9 +413,10 @@ td.employeeTable, th.employeeTable {
 
 	nav li a 
 	{
-		display: inline-block;
-		padding: 0.7em;
-		font-size: 1.25em;
+            color: rgba(50, 0, 102, 1);
+            display: inline-block;
+            padding: 0.7em;
+            font-size: 1.25em;
 	}
 
 	main
@@ -430,7 +431,7 @@ td.employeeTable, th.employeeTable {
 
 	nav li a:link
 	{
-		color: #808080;
+		color: #8080FF;
 	}
 
     nav li a:hover {
